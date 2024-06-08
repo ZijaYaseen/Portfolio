@@ -191,13 +191,13 @@ input[type="checkbox"] {
 }
 
 .text2 span {
-    font-size: 3.6rem; /* Increased font size */
+    font-size: 2.8rem; /* Increased font size */
     font-weight: 550;
     color: white; /* Ensuring the color remains white */ 
 }
 
 .text3 span {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin: 0.3rem 0;
     font-weight: 450;
     color: white; /* Change text color to white */
@@ -254,8 +254,8 @@ button:hover {
 
 @media (max-width: 750px) {
     .image img {
-        width: 400px; /* Adjust the width for smaller screens */
-        height: 400px; /* Ensure equal height for smaller screens */
+        width: 350px; /* Adjust the width for smaller screens */
+        height: 350px; /* Ensure equal height for smaller screens */
         /* picture in centre  */
     }
 }
@@ -1023,13 +1023,6 @@ footer ul li a:hover {
 
     .courses_container{
         grid-template-columns: repeat(2,1fr);
-    }
-    
-    .faqs_container{
-        grid-template-columns: 1fr;
-    }
-    .faq{
-        padding: 1.5rem;
     }
     .footer_container{
         grid-template-columns: repeat(2,1fr);
