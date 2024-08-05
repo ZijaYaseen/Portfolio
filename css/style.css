@@ -203,6 +203,46 @@ input[type="checkbox"] {
     color: white; /* Change text color to white */
 }
 
+.text3 span {
+    font-size: 1.8rem;
+    margin: 0.3rem 0;
+    font-weight: 450;
+    color: white;
+}
+
+/* Larger devices */
+@media (min-width: 1200px) {
+    .text3 span {
+        font-size: 2rem;
+        margin: 0.5rem 0;
+    }
+}
+
+/* Medium devices */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .text3 span {
+        font-size: 1.8rem;
+        margin: 0.4rem 0;
+    }
+}
+
+/* Small devices */
+@media (max-width: 767px) {
+    .text3 span {
+        font-size: 1.6rem;
+        margin: 0.3rem 0;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    .text3 span {
+        font-size: 1.4rem;
+        margin: 0.2rem 0;
+    }
+}
+
+
 .text3 .typing {
     color: rgb(26, 209, 163);
     font-weight: 500;
@@ -382,7 +422,7 @@ button:hover {
         margin-top: 0;
     }
 }
-
+/* ###################### ABOUT SECTION ENDED ####################### */
 
 
 
@@ -458,6 +498,7 @@ button:hover {
         width: 70%;
     }
 }
+/* ###################### SERVICES SECTION ENDED ####################### */
 
 /* ###################### PROJECTS SECTION STARTED ####################### */
 
@@ -839,6 +880,28 @@ nav button {
 }
 
 /* ======Footer SECTION======= */
+
+ul {
+    list-style: none; /* List style ko none set kar deta hai, jo dots ko hatata hai */
+    padding: 0; /* Padding ko zero set kar deta hai */
+    margin: 0; /* Margin ko zero set kar deta hai */
+}
+
+ul li {
+    margin-bottom: 10px; /* List items ke beech ka gap set karta hai */
+}
+
+@media (max-width: 768px) {
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    ul li {
+        margin-bottom: 5px; /* Choti screens ke liye gap ko adjust kar deta hai */
+    }
+}
+
 footer {
     padding-top: 5rem;
     background-color: var(--bg-color);
@@ -937,58 +1000,11 @@ footer ul li a:hover {
         color: var(--normal);
         cursor: pointer;
     }
+/* we will display with js  */
 
-    nav button#close-menu-btn {
-        display: none;
-    }
 
-    .nav_menu {
-        position: fixed;
-        top: 5rem;
-        right: 5%;
-        gap: 0;
-        height: fit-content;
-        width: 18rem;
-        flex-direction: column;
-        display: none;
-        /* we will display with js  */
-    }
 
-    .nav_menu li{
-        width: 100%;
-        height: 3rem;
-        animation: animateNavItems 0.2s linear forwards;
-        transform-origin: top right;
-        opacity: 0;
-    }
-    .nav_menu li a{
-        background-color:#29e9bcf8;
-        box-shadow: -4rem 6rem 10rem rgba(0,0,0,0.6);
-        width: 100%;
-        height: 100%;
-        display: grid;
-        color: var(--bg);
-        place-items: center;
-    }
-
-    .nav_menu li:nth-child(2){
-        animation-delay: 0.2s;
-    }
-    .nav_menu li:nth-child(3){
-        animation-delay: 0.4s;
-    }
-    .nav_menu li:nth-child(4){
-        animation-delay: 0.6s;
-    }
-    .nav_menu li:nth-child(5){
-        animation-delay: 0.8s;
-    }
-    .nav_menu li:nth-child(6){
-        animation-delay: 1s;
-    }
-    .nav_menu li:nth-child(7){
-        animation-delay: 1.2s;
-    }
+  
     
     @keyframes animateNavItems {
         0%{

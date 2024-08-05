@@ -1,31 +1,22 @@
-// Typing Script JS
+// Initialize the typing effect
 var typed = new Typed(".typing", {
     strings: ["Frontend Developer"], // Words to type
     typeSpeed: 100, // Typing speed in milliseconds
     backSpeed: 60, // Backspacing speed in milliseconds
     loop: true // Whether to loop through the words
-  });
-  
-//Show/hide nav menu
-const menu = document.querySelector('.nav_menu');
-const menuBtn = document.querySelector('#open-menu-btn');
-const closeBtn = document.querySelector('#close-menu-btn');
+});
 
-menuBtn.addEventListener('click', () => {
-    menu.style.display = "flex";
-    closeBtn.style.display = "inline-block";
-    menuBtn.style.display = "none";
-})
+// Show/hide nav menu based on checkbox
+const menuCheckbox = document.getElementById('click');
+const menuLinks = document.querySelectorAll('#navbar ul a');
 
-//close nav menu
-const closeNav = () => {
-    menu.style.display = "none";
-    closeBtn.style.display = "none";
-    menuBtn.style.display = "inline-block";
-}
-closeBtn.addEventListener('click', closeNav);
+menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        menuCheckbox.checked = false; // Hide the menu when a link is clicked
+    });
+});
 
-//nav color change on scroll
+// Nav color change on scroll
 window.addEventListener('scroll', () => {
-    document.querySelector('nav').classList.toggle('window-scroll', window.scrollY>100);
-})
+    document.querySelector('nav').classList.toggle('window-scroll', window.scrollY > 100);
+});
