@@ -203,13 +203,6 @@ input[type="checkbox"] {
     color: white; /* Change text color to white */
 }
 
-.text3 span {
-    font-size: 1.8rem;
-    margin: 0.3rem 0;
-    font-weight: 450;
-    color: white;
-}
-
 /* Larger devices */
 @media (min-width: 1200px) {
     .text3 span {
